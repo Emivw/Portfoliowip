@@ -28,10 +28,22 @@
                <div class="menu">
                   <ul>
                      <li><a href="#landing">Home</a></li>
-                     <li><a href="#about">About</a></li>
-                     <li><a href="#skills">Skills</a></li>
-                     <li><a href="#experience">Experience</a></li>
-                     <li><a href="#">Contact</a></li>
+                     <li><div class="dropdown">
+                        <button class="dropbtn">About</button>
+                        <div class="dropdown-content">
+                          <a href="#">About me</a>
+                          <a href="#">Skills</a>
+                          <a href="#">Testimonials</a>
+                        </div>
+                      </div></li>
+                      <li><div class="dropdown">
+                        <button class="dropbtn">Resume</button>
+                        <div class="dropdown-content">
+                          <a href="#">Works</a>
+                          <a href="#">Education</a>
+                        </div>
+                      </div></li>
+                     <li><a href="#experience">Projects</a></li>
                      <li><a href="#">Contact</a></li>
                   </ul>
                </div>
@@ -139,7 +151,9 @@
         </section>
         <!-- experience start -->
         <section id="experience">
-            
+            <div class="profile">
+            <img src="./images/dc93e6b0-ed12-40e0-9329-133ede4e4003.jpg" alt="profile">
+        </div>
         <div class="tabset">
          <!-- Tab 1 -->
          <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
@@ -231,7 +245,28 @@
               </section>
         </main>
           <!-- Contact start -->
-         
+         <!-- Contact start -->
+         <section id="contact">
+             <div class="con-header">
+                 <H1>Contact Us</H1>
+                 <p>Give us feedback, Testimonials, or reach out hope to hear from you soon !!!</p>
+             </div>
+         <div class="frm-container">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email adress..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </section>
+
+
           <footer id="dk-footer" class="dk-footer">
             <div class="container">
                 <div class="row">
