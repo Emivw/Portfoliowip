@@ -350,7 +350,7 @@ padding: 20px;
   right: 0%;
   background-color: rgb(0, 0, 0);
   padding: 20px;
-  height: 150vh;
+  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
@@ -577,16 +577,54 @@ body{
 }
 
 /* Portfolio */
+body{
+  height: 100% !important;
+}
 .prod{
-  width: 50vw;
-  height: 60vh;
-  background-color: gray;
-  display: grid;
+  width: 100vw;
+  height: 150vh;
+  background: url(../images/wp9389321-4k-pc-universe-wallpapers.jpg);
+    /* background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700686784.jpg); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   margin: 20px auto;
   padding: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto-fill);
   gap: 10px;
+}
+.prod img{
+  width: 400px;
+  height: 200px;
+}
+.prod > *{
+  background-color: #000000b0;
+  border-radius: 10%;
+  padding: 10px;
+
+}
+.prod1{
+  display: flex;
+  width: 500px;
+  height: 600px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+.prod-social{
+  font-size: 50px;
+  text-align: center;
+}
+#projects > h1{
+  background-color: #000;
+  text-align: center;
+  padding: 10px;
+  color: whitesmoke;
+  
 }
 
 
